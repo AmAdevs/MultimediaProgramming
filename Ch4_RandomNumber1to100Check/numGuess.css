@@ -1,0 +1,44 @@
+fieldset{
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+h1{
+    text-align: center;
+}
+
+
+label{
+    float: left;
+    width: 250px; 
+    text-align: right;
+    margin-right: 1em;
+    clear: left;
+
+}
+
+
+span{
+    float: left;
+
+}
+
+
+
+button{
+    display: block;
+    clear: both;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right:auto;
+    width: 25%;
+
+}
+
+#output{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
