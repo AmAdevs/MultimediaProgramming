@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>basicArrays.html</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">>
+    <script type="text/javascript">
+        var output;
+        var books;
+        var topics;
+
+        function init(){
+            output = document.getElementById("output");
+            books = Array("Flash Game Progarmming for Dummies",
+                          "Game Programming, the L Line",
+                          "HTML / XHTML / CSS All in One",
+                          "HTML5 Quick Reference");
+            topics = Array(5);
+            topics[0] = "HTML5";
+            topics[1] = "CSS3";
+            topics[2] = "JavaScript";
+            topics[3] = "AJAX";
+
+
+
+        }
+
+
+        function showBooks(){
+            output.innerHTML = ""
+            output.innerHTML =  books.join("<br>")
+
+
+        }
+
+
+        function showTopics(){
+            output.innerHTML = ""
+            output.innerHTML =  topics.join("<br>")
+            
+        }
+
+
+
+
+
+    
+    
+    </script>
+</head>
+<body onload="init()">
+    <h1>Array Demo</h1>
+    <form action="">
+        <fieldset>
+            <button type="button" onclick="showBooks()">show books</button>
+            <button type="button" onclick="showTopics()">show topics</button>
+
+        </fieldset>
+    </form>
+
+    <div id="output">book and topics will appear here..</div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript"> 
+        function checkName(){
+            var _input = document.getElementById("txtInput").value;
+            var _output = document.getElementById("lbOutput");
+
+            if ( _input == "Tim Berners-Lee"){
+                 _output.innerHTML  =  "Thanks for inventing HTML";
+           
+            }else if( _input == "Mark Zuck"){
+                 _output.innerHTML  =  "Thanks for make The Facebook Connecting around the world";
+            }else if( _input == "Steve Jobs"){
+                _output.innerHTML = "Thanks for development The Apple, Brand Name It's very Luxury and very Expensive!"
+            }else if( _input == "Jan Koum "){
+                _output.innerHTML = "Thanks for make The WhatsApp,  ";
+            }else if( _input == "Evan Spiegel"){
+                _output.innerHTML = "Thank for make The Snapchat"
+            }else if( _input == "Jack Dorsey"){
+                _output.innerHTML = "Thank Guy for make The Twitter"
+            }else{
+                _output.innerHTML = "Do I know you"
+            }
+        }
+
+    
+    </script>
+    
+    <style>
+        label, input, button{
+            display: block;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+
+        }
+
+        fieldset{
+            width: 80%;
+            margin: auto;
+
+        }
+    </style>
+
+
+    <title>ifElse.html</title>
+
+</head>
+<body>
+    
+    <h1>if else Demo</h1>
+    <form>
+        <fieldset>
+            <label id="lbOutput">Please enter your name</label>
+                <input type="text" id="txtInput" >
+                    <button type="button" onclick= "checkName()">
+                        click me
+                    </button>
+        </fieldset>
+    </form>
+
+
+
+</body>
+</html>
